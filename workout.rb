@@ -54,7 +54,7 @@ def menu
     else
       puts "Oops, invalid option! Please try again."
     end
-  end
+  end 
 
   def enter_new_workout
     puts "Enter date of workout (DD-MM-YYYY): "
@@ -86,9 +86,8 @@ def menu
   def view_all_workouts
     if $workouts.empty?
       puts "No workouts yet."
-    else $workouts.each do { |workout| puts workout}
+    else $workouts.each do { |workout| puts workout }
   end
-end
 
 $workouts = []
 
