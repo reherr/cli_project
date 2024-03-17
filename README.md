@@ -1,5 +1,5 @@
-# ruby-cli-template
+# My Workout CLI
 
-Use this repository as a template for your Ruby CLI (command line interface) project.
+A command line interface app to log workouts.
 
 - Ruby version: `3.2.1`
