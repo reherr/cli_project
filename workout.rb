@@ -86,10 +86,12 @@ def menu
   def view_all_workouts
     if $workouts.empty?
       puts "No workouts yet."
-    else $workouts.each do |workout|
+    else 
+      $workouts.each do |workout|
       puts workout
     end
   end
+end
 
 $workouts = []
 
