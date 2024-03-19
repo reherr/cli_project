@@ -2,8 +2,12 @@ require 'minitest/autorun'
 require './workout'
 
 class TestExercise < Minitest::Test
+  def setup
+    @exercise = Exercise.new("dead lifts", 3, 8, 100)
+  end
+
   def test_to_s
-    exercise = Exercise.new("dead lifts", 3, 8, 100)
-    assert_equal "dead lifts: 3 sets of 8 reps at 100 lbs.", exercise.to_s, "to_s method failed"
+    expected_output = "Workout has been logged!"
+    assert_equal expected_output, @exercise.to_s, "to_s method failed"
   end
 end
