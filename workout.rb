@@ -30,7 +30,7 @@ class WorkoutOfTheDay
     @exercises.each do |exercise|
       workout += exercise.to_s + "\n"
     end
-    puts workout
+    return workout
   end
 end
 
@@ -88,7 +88,7 @@ def menu
       puts "No workouts yet."
     else 
       $workouts.each do |workout|
-      puts workout
+      puts workout.to_s
     end
   end
 end
